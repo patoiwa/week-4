@@ -178,14 +178,15 @@ console.log('Los numeros son 5 y 6');
 a = suma(5,6);
 console.log('La suma es: ' + a);
 //B
-function suma_validate(a,b){
-    if ( (typeof(a) === "number") && typeof(b) === "number"){
-        return a + b;
-    }else{
+function sumaValidate(a,b){
+    if ((typeof a != "number") || (typeof b != "number")){
         alert("Error: at least one of the parameters was not a number");
         return NaN;
+    }else{
+        return a + b;
     }
 }
+sumaValidate(6, 'kksjsjsk')
 //C
 function validate_integer (a){
     if( a % 1 === 0){
@@ -194,6 +195,7 @@ function validate_integer (a){
         return false;
     }
 }
+console.log('el numero 1.5 es entero: ' + validate_integer(1.5)); 
 //D
 function suma_integer_validate(a,b){
     if ( (typeof(a) === "number") && typeof(b) === "number"){
@@ -211,8 +213,9 @@ function suma_integer_validate(a,b){
         return NaN;
     }
 }
+suma_integer_validate(1, 1.8);
 //E
-function suma_integer_validate(a,b){
+function suma_integer_validate_v2(a,b){
     if ( (typeof(a) === "number") && typeof(b) === "number"){
         if(!(validate_integer(a))){
             alert('Error: first number is not an integer');
@@ -228,3 +231,4 @@ function suma_integer_validate(a,b){
         return NaN;
     }
 }
+suma_integer_validate_v2(1, 1.8);
