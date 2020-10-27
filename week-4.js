@@ -6,22 +6,22 @@ Crear dos variables de tipo String y sumar el largo de cada variable (cantidad d
 */
 console.log('Ejercicio 1');
 // A
-var a1 = 4;
-var a2 = 5;
-var a3 = a1 + a2;
-console.log('La variable 1 es:'+ a1);
-console.log('La variable 2 es:'+ a2);
-console.log('La suma de las variables es:'+ a3);
+var firstNumber = 4;
+var secondNumber = 5;
+var addition = firstNumber + secondNumber;
+console.log('La variable 1 es:'+ firstNumber);
+console.log('La variable 2 es:'+ secondNumber);
+console.log('La suma de las variables es:'+ addition);
 // B
-var b1 = 'Radium';
-var b2 = 'Rocket';
-var b3 = b1 + ' ' + b2;
-console.log('La variable 1 es:'+ b1);
-console.log('La variable 2 es:'+ b2);
-console.log('La suma de las variables es:'+ b3);
+var firstString = 'Radium';
+var secondString = 'Rocket';
+var combinedString = firstString + ' ' + secondString;
+console.log('La variable 1 es:'+ firstString);
+console.log('La variable 2 es:'+ secondString);
+console.log('La suma de las variables es:'+ combinedString);
 // C
-var c1 = b1.length + b2.length;
-console.log('La suma de las letras de las variables es:'+ c1);
+var stringLength = firstString.length + secondString.length;
+console.log('La suma de las letras de las variables es:'+ stringLength);
 /*
 Strings
 Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).
@@ -33,27 +33,27 @@ Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres 
 */
 console.log('Ejercicio 2');
 //A
-var s1 = 'murcielago';
-console.log('La cadena es: ' + s1);
-console.log('La cadena en mayuscula:' + s1.toUpperCase()); 
+var stringMurcielago = 'murcielago';
+console.log('La cadena es: ' + stringMurcielago);
+console.log('La cadena en mayuscula:' + stringMurcielago.toUpperCase()); 
 //B
-s2 = s1.substring(0,5);
-console.log(s2);
+stringMuercielagoSubFirstFive = stringMurcielago.substring(0,5);
+console.log(stringMuercielagoSubFirstFive);
 //C
-s3 = s1.substring(7,10);
-console.log(s3);
+stringMuercielagoSubLastThree = stringMurcielago.substring(7,10);
+console.log(stringMuercielagoSubLastThree);
 //D
-s4 = s1.substring(0,1).toUpperCase() + s1.substring(1,10).toLowerCase();
-console.log(s4);
+string_4 = stringMurcielago.substring(0,1).toUpperCase() + stringMurcielago.substring(1,10).toLowerCase();
+console.log(string_4);
 //E
-s5 = 'radium rocket';
-console.log('La nueva cadena con espacio en blanco es: ' + s5);
-s6 = s5.indexOf(" ");
-console.log('La posicion del primer espacio en blanco en la cadena es: ' + s6);
+stringRadium = 'radium rocket';
+console.log('La nueva cadena con espacio en blanco es: ' + stringRadium);
+stringBlankSpace = stringRadium.indexOf(" ");
+console.log('La posicion del primer espacio en blanco en la cadena es: ' + stringBlankSpace);
 //F
-s7 = 'califragilistico espialidoso';
-s8 = s7.substring(0,1).toUpperCase() + s7.substring(1,s7.indexOf(" ") + 1).toLowerCase() + s7.substring(s7.indexOf(" ") + 1,s7.indexOf(" ") + 2).toUpperCase() + s7.substring(s7.indexOf(" ") + 2).toLowerCase();
-console.log(s8);
+stringCalifrag = 'califragilistico espialidoso';
+stringCalifragFirstLetterUpper = stringCalifrag.substring(0,1).toUpperCase() + stringCalifrag.substring(1,stringCalifrag.indexOf(" ") + 1).toLowerCase() + stringCalifrag.substring(stringCalifrag.indexOf(" ") + 1,stringCalifrag.indexOf(" ") + 2).toUpperCase() + stringCalifrag.substring(stringCalifrag.indexOf(" ") + 2).toLowerCase();
+console.log(stringCalifragFirstLetterUpper);
 /*
 Arrays
 Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 (utilizar console.log)
@@ -66,28 +66,30 @@ Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (util
 */
 console.log('Ejercicio 3');
 //A
-array1 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-console.log(array1[4] + " " + array1[10]);
+arrayMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+console.log(arrayMonths[4] + " " + arrayMonths[10]);
 //B
-array1.sort()
-console.log(array1);
+arrayMonths.sort()
+console.log(arrayMonths);
 //C
-array1 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-array1.unshift('First');
-array1.push('Last');
-console.log(array1);
+arrayMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+arrayMonths.unshift('First');
+arrayMonths.push('Last');
+console.log(arrayMonths);
 //D
-array1.pop();
-array1.shift();
+arrayMonths.pop();
+arrayMonths.shift();
 //E
-array1.reverse();
-console.log(array1);
+arrayMonths = arrayMonths.reverse();
+console.log(arrayMonths);
 //F
-array1 = array1.join('-');
-console.log(array1);
+arrayMonths = arrayMonths.reverse();
+arrayMonths = arrayMonths.join('-');
+console.log(arrayMonths);
 //G
-array1 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-console.log(array1.slice(4,11));
+arrayMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+arrayMonthsMayToNovember = arrayMonths.slice(4,11);
+console.log(arrayMonthsMayToNovember);
 /*
 If Else
 Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” y sino un alerta con el mensaje “Lower than 0,5”
@@ -141,10 +143,14 @@ for (i = 0; i<=4; i++){
     alert(arrayFor[i]);
 }
 //B
-for (i = 0; i<=4; i++){
+/*for (i = 0; i<=4; i++){
     arrayFor[i] = arrayFor[i].substring(0,1).toUpperCase() + arrayFor[i].substring(1).toLowerCase()
     alert(arrayFor[i]);
-}
+}*/
+arrayFor.forEach(element => { element = element.substring(0,1).toUpperCase() + element.substring(1).toLowerCase();
+    alert(element); 
+});
+
 //C
 sentence = "";
 for (i = 0; i<=4; i++){
@@ -175,18 +181,21 @@ function suma(a,b){
     return a + b;  
 }
 console.log('Los numeros son 5 y 6');
-a = suma(5,6);
-console.log('La suma es: ' + a);
+expectToSucceed = suma(5,6);
+console.log('La suma es: ' + expectToSucceed);
 //B
 function sumaValidate(a,b){
-    if ((typeof a != "number") || (typeof b != "number")){
+    if ((typeof a !== "number") || (typeof b !== "number")){
         alert("Error: at least one of the parameters was not a number");
         return NaN;
     }else{
         return a + b;
     }
 }
-sumaValidate(6, 'kksjsjsk')
+expectToFail = sumaValidate(6, 'kksjsjsk');
+console.log("Expect Nan:" + expectToFail);
+expectToSucceed = sumaValidate(5,6)
+console.log('Expect a number:' + expectToSucceed);
 //C
 function validate_integer (a){
     if( a % 1 === 0){
@@ -195,14 +204,17 @@ function validate_integer (a){
         return false;
     }
 }
-console.log('el numero 1.5 es entero: ' + validate_integer(1.5)); 
+expectToFail = validate_integer(1.5);
+console.log('el numero 1.5 es entero: ' + expectToFail); 
+expectToSucceed = validate_integer(5);
+console.log('5 is an integer:' + expectToSucceed);
 //D
 function suma_integer_validate(a,b){
     if ( (typeof(a) === "number") && typeof(b) === "number"){
-        if( a % 1 != 0 ){
+        if( a % 1 !== 0 ){
             alert('Error: first number is not an integer');
             return Math.round(a);
-        }else if ( b % 1 != 0 ){
+        }else if ( b % 1 !== 0 ){
             alert('Error: second number is not an integer');
             return Math.round(b);
         }else{
@@ -213,7 +225,10 @@ function suma_integer_validate(a,b){
         return NaN;
     }
 }
-suma_integer_validate(1, 1.8);
+expectToFail = suma_integer_validate(1, 1.8);
+console.log('expect 1.8 rounded to 2' + expectToFail);
+expectToSucceed = suma_integer_validate(1, 6);
+console.log('expect an integer' + expectToSucceed);
 //E
 function suma_integer_validate_v2(a,b){
     if ( (typeof(a) === "number") && typeof(b) === "number"){
@@ -231,4 +246,7 @@ function suma_integer_validate_v2(a,b){
         return NaN;
     }
 }
-suma_integer_validate_v2(1, 1.8);
+expectToFail = suma_integer_validate(1, 1.8);
+console.log('expect 1.8 rounded to 2' + expectToFail);
+expectToSucceed = suma_integer_validate(1, 6);
+console.log('expect an integer' + expectToSucceed);
